@@ -3,7 +3,7 @@ public class S1{
     // leaner search
     public static void main(String[] args){
      int[] arr = {18, 12, 9, 14, 77, 50};
-     int target= 14;
+     int target= 100;
      System.out.println(linearSerach(arr, target));
     }
     static int linearSerach(int[] arr, int target){
@@ -15,6 +15,6 @@ public class S1{
                 return i;
             }
         }
-        return target;
+        return -1;
     }
 }
