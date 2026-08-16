@@ -1,19 +1,19 @@
-
-public class S2{
-    public static void main(String[] args){
-     int[] arr = {18, 12, 9, 14, 77, 50};
-     int target= 14;
-     System.out.println(linearSerach(arr, target));
+public class S2 {
+    public static void main(String[] args) {
+        String name = "AJAY KUMAR";
+        char target = 'M';
+        System.out.println(stringSearch(name, target));
+        
     }
-    static int linearSerach(int[] arr, int target){
-        if(arr.length==0){
-            return -1;
+    static boolean stringSearch(String str, char target){
+        if(str.length() == 0){
+          return false;
         }
-        for(int i =0; i<arr.length ;i++){
-            if (target == arr[i]){
-                return i;
+        for(int i =0; i<str.length(); i++){
+            if(target == str.charAt(i) ){
+              return true;
             }
         }
-        return target;
+        return false;
     }
 }
